@@ -107,7 +107,7 @@ STATIC_URL = '/static/'
 
 
 #relative path
-TEMPLATE_PATH = os.path.join(BASE_DIR, '/templates/')
+TEMPLATE_PATH = os.path.join(BASE_DIR, '/tango_with_django_project/templates')
 
 #template directory
 TEMPLATE_DIRS = {
@@ -115,7 +115,6 @@ TEMPLATE_DIRS = {
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
     TEMPLATE_PATH,
-    "/Users/Tuan/Desktop/Django/myFirstDjangoApp/tango_with_django_project/templates/rango",
 
 }
 

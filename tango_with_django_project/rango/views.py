@@ -2,6 +2,9 @@ from django.shortcuts import render
 from django.http import HttpResponse
 import os
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
 def index(request):
 
     # Construct a dictionary to pass to the template engine as its context.
@@ -11,14 +14,14 @@ def index(request):
     # Return a rendered response to send to the client.
     # We make use of the shortcut function to make our lives easier.
     # Note that the first parameter is the template we wish to use.
-    print os.path.dirname(os.path.realpath(__file__))
+    print os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     print os.path.dirname(__file__)
     print os.path.dirname(os.path.dirname(__file__))
     print __file__
 	#print os.path.dirname(__file__)
 	#print os.path.dirname(os.path.dirname(__file__))
     
-    return render(request, '/rango/index.html', context_dict)
+    return render(request, 'rango/index.html', context_dict)
 
 
 
