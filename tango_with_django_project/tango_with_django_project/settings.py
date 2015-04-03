@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rango',
+    'tango_with_django_project',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -101,3 +102,21 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+
+
+#relative path
+TEMPLATE_PATH = os.path.join(BASE_DIR, '/templates/')
+
+#template directory
+TEMPLATE_DIRS = {
+    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
+    # Always use forward slashes, even on Windows.
+    # Don't forget to use absolute paths, not relative paths.
+    TEMPLATE_PATH,
+    "/Users/Tuan/Desktop/Django/myFirstDjangoApp/tango_with_django_project/templates/rango",
+
+}
+
+
