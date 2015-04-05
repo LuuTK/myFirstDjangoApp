@@ -25,7 +25,7 @@ SECRET_KEY = '@323+5wvfwdsi$2y8rrcxj#gbzo)w@e%#5chl#gjoznqkm9_b*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -121,4 +121,7 @@ TEMPLATE_DIRS = {
 
 }
 
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'tango_with_django_project/media') # Absolute path to the media directory
 
