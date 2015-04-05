@@ -26,6 +26,7 @@ def index(request):
 
 
 def about(request):
-	 print 'hi'
-	 print __file__
-	 return HttpResponse('<a href="/rango/">Index???</a>')
+    	context_dict = {'boldmessage': "This is the ABOUT page exercise"}
+	print 'hi'
+	print __file__
+	return render(request, 'rango/about.html', context_dict)
